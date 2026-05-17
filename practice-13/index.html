@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заметки — Практика 13</title>
+  <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+  <style>
+    body { max-width: 700px; margin: 0 auto; padding: 1rem; }
+    #notes-list li { background: #f5f5f5; margin-bottom: 0.5rem; padding: 0.6rem 1rem; border-radius: 4px; }
+    #offline-banner { display: none; background: #e74c3c; color: #fff; text-align: center; padding: 0.5rem; }
+  </style>
+</head>
+<body>
+  <div id="offline-banner">Вы офлайн — данные загружены из кэша</div>
+  <h1>Заметки</h1>
+  <form id="note-form" class="row">
+    <input class="col-9" type="text" id="note-input" placeholder="Введите заметку" required>
+    <button class="col-3 button primary" type="submit">Добавить</button>
+  </form>
+  <ul id="notes-list" style="list-style:none; padding:0; margin-top:1rem;"></ul>
+  <script src="app.js"></script>
+</body>
+</html>
